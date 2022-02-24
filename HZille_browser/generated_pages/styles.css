@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    font-size: 12px;
+}
+
+h1 {
+    font-size: 2.5em;
+    font-family: "Optima", serif;
+}
+
+span {
+    display: block;
+    font-size: 1em;
+    line-height: 1em;
+    font-family: "Geneva", sans-serif;
+    color: gray;
+}
+
+img {
+    max-width: 100%;
+}
+
+#main-container {
+    display: flex;
+}
+
+.split {
+    flex-grow: 1;
+    flex-basis: 0;
+    max-height: 100vh;
+    overflow: scroll;
+    padding: 12px;
+}
+
+.meta-data-block {
+    margin-top: 0.5em;
+    margin-bottom: 3em;
+}
+#Heinrich-Zille {
+
+}
+
+#Unknown-Author {
+
+}

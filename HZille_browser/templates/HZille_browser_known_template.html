@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <link rel="stylesheet" href="../generated_pages/styles.css">
+
+    <head>
+        <title>{{title}}</title>
+    </head>
+
+    <body>
+        <div id="main-container">
+            <div id="Heinrich Zille" class="split">
+                <div>
+                    <h1>Author known</h1>
+                </div>
+                {% for image_metadata in data['known_author_images'] %}
+                <img src="{{image_metadata['image_path']}}">
+                {% endfor %}
+            </div>
+        </div>
+
+    </body>
+</html>

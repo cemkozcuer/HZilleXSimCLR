@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <link rel="stylesheet" href="../generated_pages/styles.css">
+
+    <head>
+        <title>{{title}}</title>
+    </head>
+
+    <body>
+        <div id="main-container">
+            <div id="Heinrich Zille" class="split">
+                <div>
+                    <h1>Author known</h1>
+                </div>
+                {% for image_metadata in data['known_author_images'] %}
+                <div class="image-block">
+                    <img src="{{image_metadata['image_path']}}">
+                    <div class="meta-data-block">
+                        <span>{{image_metadata['id']}}</span>
+                        <span>{{image_metadata['title']}}</span>
+                        <span>{{image_metadata['date']}}</span>
+                        <span>{{image_metadata['technique']}}</span>
+                        <span>{{image_metadata['measurement_1']}}</span>
+                        {% if image_metadata['measurement_2'] == num %}
+                        <span>{{image_metadata['measurement_2']}}</span>
+                        {% endif %}
+                        {% if image_metadata['measurement_3'] == num  %}
+                        <span>{{image_metadata['measurement_4']}}</span>
+                        {% endif %}
+                        {% if image_metadata['measurement_4'] == num  %}
+                        <span>{{image_metadata['measurement_4']}}</span>
+                        {% endif %}
+                        {% if image_metadata['measurement_5'] == num %}
+                        <span>{{image_metadata['measurement_5']}}</span>
+                        {% endif %}
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            <div id="Unknown Author" class="split">
+                <div>
+                    <h1>Author unknown</h1>
+                </div>
+                {% for image_metadata in data['unknown_author_images'] %}
+                <div class="image-block">
+                    <img src="{{image_metadata['image_path']}}">
+                    <div class="meta-data-block">
+                        <span>{{image_metadata['id']}}</span>
+                        <span>{{image_metadata['title']}}</span>
+                        <span>{{image_metadata['date']}}</span>
+                        <span>{{image_metadata['technique']}}</span>
+                        <span>{{image_metadata['measurement_1']}}</span>
+                        {% if image_metadata['measurement_2'] == num %}
+                        <span>{{image_metadata['measurement_2']}}</span>
+                        {% endif %}
+                        {% if image_metadata['measurement_3'] == num  %}
+                        <span>{{image_metadata['measurement_4']}}</span>
+                        {% endif %}
+                        {% if image_metadata['measurement_4'] == num  %}
+                        <span>{{image_metadata['measurement_4']}}</span>
+                        {% endif %}
+                        {% if image_metadata['measurement_5'] == num %}
+                        <span>{{image_metadata['measurement_5']}}</span>
+                        {% endif %}
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+
+    </body>
+</html>

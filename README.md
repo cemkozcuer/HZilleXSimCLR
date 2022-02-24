@@ -1,0 +1,1 @@
+The documentation of the project is to be found [here](https://github.com/cemkozcuer/HZilleXSimCLR/blob/main/documentation/DOCUMENTATION.md)

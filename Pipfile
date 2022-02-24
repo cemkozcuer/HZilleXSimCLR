@@ -1,0 +1,28 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+matplotlib = "*"
+numpy = "*"
+torch = "*"
+torchvision = "*"
+scikit-learn = "*"
+scipy = "*"
+opencv-contrib-python = "==4.5.1.48"
+requests = "*"
+smbprotocol = "*"
+pandas = "*"
+jupyterlab = "*"
+lxml = "*"
+xmltodict = "*"
+jinja2 = "*"
+pytorch-lightning = "*"
+lightly = "*"
+ipywidgets = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.8"
