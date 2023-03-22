@@ -1,4 +1,4 @@
-# Heinrich Zille X SimCLR
+# Investigating the Visual Language of Heinrich Zille´s Unpublished Photographs with Self-Supervised Learning -
 ## Learning representations for Heinrich Zille´s photographs
 
 **Table of content**
